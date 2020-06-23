@@ -25,6 +25,6 @@ RUN gclient && cd /V8 && fetch v8
 RUN rm -rf ~/.gdbinit
 RUN echo "source /V8/v8/tools/gdbinit" >> ~/.gdbinit
 RUN echo "source /V8/v8/tools/gdb-v8-support.py" >> ~/.gdbinit
-RUN echo "source ~/pwndbg/gdbinit.py" >> ~/.gdbinit
+RUN echo "source /pwndbg/gdbinit.py" >> ~/.gdbinit
 
 CMD ["/sbin/my_init"]
